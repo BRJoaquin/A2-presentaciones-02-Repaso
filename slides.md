@@ -278,6 +278,3 @@ Para comenzar con A2, es importante que repases los conceptos fundamentales de l
 ---
 
 # Ahora sí, ¡a comenzar con A2! 🚀
-
-
----
