@@ -18,7 +18,7 @@ Repasemos los conceptos fundamentales de las estructuras de datos y algoritmos. 
 
 ¿Alguna vez te has preguntado por qué algunos programas son más rápidos que otros? Aquí está el secreto: **Órdenes Temporales**.
 
-```cpp
+```cpp {maxHeight:'350px'}
 void printArray(int arr[], int size) {
     for(int i = 0; i < size; i++) {
         cout << arr[i] << " ";
@@ -47,6 +47,7 @@ Ejemplos de órdenes temporales:
 - **Lista:** Secuencia de elementos.
 - **Set:** Colección de elementos únicos.
 - **Diccionario:** Pares de clave-valor.
+- ¿ Algún otro ?
 
 ---
 
@@ -54,7 +55,7 @@ Ejemplos de órdenes temporales:
 
 Las listas son como una lista de compras. Puedes agregar, quitar y buscar elementos.
 
-```cpp {all|8-10|12-14|16-18|20-22|24-26|28-30|32-34|all}{maxHeight:'400px'}
+```cpp {all|8-10|12-14|16-18|20-22|24-26|28-30|32-34|all}{maxHeight:'350px'}
 #ifndef LIST_H
 #define LIST_H
 
@@ -101,7 +102,7 @@ public:
 
 Los conjuntos son como una colección de elementos únicos. No hay duplicados. Utiles para buscar y eliminar elementos sin importar su orden.
 
-```cpp {all|8-10|12-14|16-18|20-22|24-26|all}{maxHeight:'400px'}
+```cpp {all|8-10|12-14|16-18|20-22|24-26|all}{maxHeight:'350px'}
 #ifndef SET_H
 #define SET_H
 
@@ -140,7 +141,7 @@ public:
 
 Los diccionarios son como una tabla de datos. Cada elemento tiene una clave única y un valor asociado.
 
-```cpp {all|8-10|12-14|16-18|20-22|24-26|28-30|all}{maxHeight:'400px'}
+```cpp {all|8-10|12-14|16-18|20-22|24-26|28-30|all}{maxHeight:'350px'}
 #ifndef DICTIONARY_H
 #define DICTIONARY_H
 
@@ -187,13 +188,19 @@ Las estructuras de datos son como cajas de herramientas. Cada una tiene su prop�
 - **Árbol Binario de Busqueda:** Búsqueda eficiente.
 - **AVL:** Árbol balanceado.
 
+<br>
+
+Estructuras de datos vs Tipo abstracto de datos:
+
+- ¿ Cuál es la diferencia entre una estructura de datos y un tipo abstracto de datos ?
+- ¿ Quién determina el órden de las operaciones ? 
+
 ---
 
 # Lista Simple y Doble Enlace 🔗
+Dos variantes de listas enlazadas
 
-Como una carrera de relevos, cada elemento pasa el testigo al siguiente... O al anterior.
-
-```cpp {all|1-10|3|4-5|13-20|all}{maxHeight:'400px'}
+```cpp {all|1-10|3|4-5|13-20|all}{maxHeight:'350px'}
 class Node {
 public:
     int data;
@@ -221,9 +228,9 @@ int main() {
 # Arrays vs. Listas Enlazadas
 Cuál es mejor?
 
-**Arrays:** Rápidos para el acceso a posiciones específicas, pero poco dinámicos.
+**Arrays:** Rápidos para el acceso a posiciones específicas, problemas con tamaño variable.
 
-**Listas Enlazadas:** Lentas para el acceso, rápidas para cambios.
+**Listas Enlazadas:** Lentas para el acceso a cualquier posición, tamaño variable.
 
 ---
 
@@ -276,5 +283,6 @@ Para comenzar con A2, es importante que repases los conceptos fundamentales de l
 - **Estructuras de Datos:** Arrays, listas enlazadas, árboles binarios de búsqueda.
 
 ---
-
+layout: quote
+---
 # Ahora sí, ¡a comenzar con A2! 🚀
